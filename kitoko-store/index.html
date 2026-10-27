@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitoko Store — Mode africaine contemporaine à Kinshasa</title>
+  <meta name="description" content="Kitoko Store : robes wax, hauts brodés, accessoires et chaussures. Mode africaine contemporaine à Kinshasa. Commande facile via WhatsApp.">
+  <meta property="og:title" content="Kitoko Store — Mode africaine contemporaine">
+  <meta property="og:description" content="Robes wax, hauts brodés, accessoires. Livraison à Kinshasa.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <!-- BARRE PROMO -->
+  <div class="promo-bar">
+    <p>✦ Livraison offerte à Kinshasa dès 100 000 CDF ✦</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#accueil" class="logo" aria-label="Accueil Kitoko Store">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">Kitoko<small>Store</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#boutique" class="nav-link">Boutique</a></li>
+          <li><a href="#categories" class="nav-link">Catégories</a></li>
+          <li><a href="#maison" class="nav-link">La maison</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-wrap">
+          <input type="search" id="search-input" class="search-input" placeholder="Rechercher…" aria-label="Rechercher un produit">
+        </div>
+        <button class="icon-btn" id="wishlist-btn" aria-label="Voir mes favoris">
+          <span aria-hidden="true">♡</span>
+          <span class="badge-count" id="wishlist-count" hidden>0</span>
+        </button>
+        <button class="icon-btn cart-btn" id="cart-btn" aria-label="Ouvrir le panier">
+          <span aria-hidden="true">🛒</span>
+          <span class="badge-count" id="cart-count" hidden>0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Nouvelle collection · 2026</p>
+          <h1>La mode africaine,<br><em>réinventée</em> pour aujourd'hui</h1>
+          <p class="hero-sub">Des pièces uniques en wax, des coupes modernes, un savoir-faire congolais. Chaque vêtement raconte une histoire.</p>
+          <div class="hero-actions">
+            <a href="#boutique" class="btn btn-primary">Découvrir la collection</a>
+            <a href="#maison" class="btn btn-ghost">Notre histoire</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="hero-tile hero-tile-1">👗</div>
+          <div class="hero-tile hero-tile-2">👚</div>
+          <div class="hero-tile hero-tile-3">👜</div>
+          <div class="hero-tile hero-tile-4">👠</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÉGORIES -->
+    <section id="categories" class="section categories">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Explorer</p>
+          <h2>Par catégorie</h2>
+        </header>
+        <div class="cat-grid">
+          <button class="cat-card reveal" data-cat-jump="Robes">
+            <span class="cat-emoji" aria-hidden="true">👗</span>
+            <span class="cat-name">Robes</span>
+            <span class="cat-count" data-count="Robes"></span>
+          </button>
+          <button class="cat-card reveal" data-cat-jump="Hauts">
+            <span class="cat-emoji" aria-hidden="true">👚</span>
+            <span class="cat-name">Hauts</span>
+            <span class="cat-count" data-count="Hauts"></span>
+          </button>
+          <button class="cat-card reveal" data-cat-jump="Accessoires">
+            <span class="cat-emoji" aria-hidden="true">👜</span>
+            <span class="cat-name">Accessoires</span>
+            <span class="cat-count" data-count="Accessoires"></span>
+          </button>
+          <button class="cat-card reveal" data-cat-jump="Chaussures">
+            <span class="cat-emoji" aria-hidden="true">👠</span>
+            <span class="cat-name">Chaussures</span>
+            <span class="cat-count" data-count="Chaussures"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOUTIQUE -->
+    <section id="boutique" class="section shop">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">La boutique</p>
+          <h2>Toutes nos pièces</h2>
+          <p class="section-sub">Chaque pièce est confectionnée à Kinshasa par nos artisans partenaires. Séries limitées.</p>
+        </header>
+
+        <div class="filters reveal">
+          <div class="filter-chips" role="group" aria-label="Filtrer par catégorie">
+            <button class="chip is-active" data-filter-cat="all">Tout</button>
+            <button class="chip" data-filter-cat="Robes">Robes</button>
+            <button class="chip" data-filter-cat="Hauts">Hauts</button>
+            <button class="chip" data-filter-cat="Accessoires">Accessoires</button>
+            <button class="chip" data-filter-cat="Chaussures">Chaussures</button>
+            <button class="chip chip-wish" data-filter-cat="wishlist">♡ Favoris</button>
+          </div>
+          <div class="filter-row">
+            <label class="filter-select-wrap">
+              <span>Taille</span>
+              <select id="filter-size">
+                <option value="all">Toutes</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="Unique">Unique</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+              </select>
+            </label>
+            <label class="filter-select-wrap">
+              <span>Trier par</span>
+              <select id="filter-sort">
+                <option value="featured">En vedette</option>
+                <option value="price-asc">Prix croissant</option>
+                <option value="price-desc">Prix décroissant</option>
+                <option value="new">Nouveautés</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+
+        <div class="products-grid" id="products-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <p class="empty-emoji" aria-hidden="true">🔍</p>
+          <p>Aucun produit ne correspond à vos filtres.</p>
+          <button class="btn btn-outline" id="reset-filters">Réinitialiser</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LA MAISON -->
+    <section id="maison" class="section about">
+      <div class="container about-inner">
+        <div class="about-text reveal">
+          <p class="eyebrow">La maison</p>
+          <h2>L'élégance qui vient de chez nous</h2>
+          <p>Kitoko Store est né à Kinshasa d'une conviction simple : la mode africaine mérite des coupes modernes, des finitions soignées et une visibilité digne des plus grandes marques.</p>
+          <p>Nous travaillons avec une dizaine d'artisans et de couturières partenaires à Kinshasa. Chaque pièce est produite en petite série — parfois en pièce unique — pour garantir la qualité et l'originalité.</p>
+          <p>Notre wax vient de Cotonou et de Kinshasa, nos broderies sont faites à la main, nos cuirs sont tannés localement.</p>
+        </div>
+        <ul class="pillars" role="list">
+          <li class="pillar reveal">
+            <span class="pillar-num" aria-hidden="true">01</span>
+            <h3>Fait à Kinshasa</h3>
+            <p>Chaque pièce est confectionnée ici, par des artisans partenaires rémunérés à leur juste valeur.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar-num" aria-hidden="true">02</span>
+            <h3>Séries limitées</h3>
+            <p>Petites quantités pour garantir l'originalité. Certaines pièces ne sont produites qu'en un seul exemplaire.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="pillar-num" aria-hidden="true">03</span>
+            <h3>Livraison rapide</h3>
+            <p>Livraison à Kinshasa sous 48h. Paiement à la livraison ou par Mobile Money.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="contact" class="section newsletter">
+      <div class="container newsletter-inner reveal">
+        <p class="eyebrow">Restons en contact</p>
+        <h2>Recevez les nouveautés en avant-première</h2>
+        <p>Nouvelles pièces, ventes privées, coulisses de l'atelier. Une fois par mois, pas plus.</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <label for="nl-email" class="sr-only">Votre email</label>
+          <input type="email" id="nl-email" placeholder="votre@email.cd" required>
+          <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+        <p class="newsletter-success" id="nl-success" hidden>Merci ! Vous êtes inscrit·e à la newsletter.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#accueil" class="logo logo-footer">
+          <span class="logo-mark" aria-hidden="true">✦</span>
+          <span class="logo-text">Kitoko<small>Store</small></span>
+        </a>
+        <p>Mode africaine contemporaine, confectionnée à Kinshasa.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Boutique">
+        <h3>Boutique</h3>
+        <ul role="list">
+          <li><a href="#boutique">Toutes les pièces</a></li>
+          <li><a href="#categories">Robes</a></li>
+          <li><a href="#categories">Hauts</a></li>
+          <li><a href="#categories">Accessoires</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav" aria-label="Aide">
+        <h3>Aide</h3>
+        <ul role="list">
+          <li><a href="#contact">Nous contacter</a></li>
+          <li><a href="#">Livraison &amp; retours</a></li>
+          <li><a href="#">Guide des tailles</a></li>
+          <li><a href="#">CGV</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul role="list">
+          <li>📍 Av. de la Mode, Gombe, Kinshasa</li>
+          <li>📞 +243 000 000 000</li>
+          <li>✉️ bonjour@kitoko.cd</li>
+          <li>🕒 Lun–Sam · 9h – 18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Kitoko Store — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- PANIER (drawer) -->
+  <aside class="drawer" id="cart-drawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close-cart></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <header class="drawer-head">
+        <h2 id="cart-title">Mon panier</h2>
+        <button class="icon-btn" data-close-cart aria-label="Fermer le panier">✕</button>
+      </header>
+      <div class="drawer-body" id="cart-items"></div>
+      <footer class="drawer-foot" id="cart-footer" hidden></footer>
+    </div>
+  </aside>
+
+  <!-- MODAL PRODUIT -->
+  <div class="modal" id="product-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-product></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+      <button class="modal-close" id="product-modal-close" aria-label="Fermer">✕</button>
+      <div class="product-modal-media" id="product-modal-media"></div>
+      <div class="product-modal-body">
+        <p class="product-cat" id="product-modal-cat"></p>
+        <h2 id="product-modal-title"></h2>
+        <p class="product-modal-price" id="product-modal-price"></p>
+        <p class="product-modal-desc" id="product-modal-desc"></p>
+
+        <div class="product-sizes" id="product-sizes-wrap">
+          <span class="sizes-label">Taille</span>
+          <div class="sizes-list" id="product-sizes"></div>
+        </div>
+
+        <div class="product-qty">
+          <span class="sizes-label">Quantité</span>
+          <div class="qty-stepper">
+            <button type="button" data-qty="-1" aria-label="Diminuer">−</button>
+            <span id="product-qty-value">1</span>
+            <button type="button" data-qty="1" aria-label="Augmenter">+</button>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="product-add">Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOASTS -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
